@@ -36,9 +36,13 @@
 }
 
 .hero-circle-background {
-  // position: absolute;
-  transform: translateX(62px);
-  z-index: -1;
+  // position: relative;
+  // transform: translateY(-77px);
+  // transform: translateX(50px);
+  transform: translate(70px, -120px);
+
+  // z-index: -1;
+  // top: 50%;
 
   width: 1079px;
   height: 1051px;
@@ -49,7 +53,7 @@
 .hero-circle-white {
   // position: absolute;
 
-  transform: translateY(-141px);
+  transform: translateX(-60px);
 
   width: 1083px;
   height: 1083px;

@@ -181,9 +181,8 @@ img {
 }
 
 .hero-circle-background {
-  -webkit-transform: translateX(62px);
-          transform: translateX(62px);
-  z-index: -1;
+  -webkit-transform: translate(70px, -120px);
+          transform: translate(70px, -120px);
   width: 1079px;
   height: 1051px;
   border-radius: 50%;
@@ -191,8 +190,8 @@ img {
 }
 
 .hero-circle-white {
-  -webkit-transform: translateY(-141px);
-          transform: translateY(-141px);
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
   width: 1083px;
   height: 1083px;
   border-radius: 50%;
