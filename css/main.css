@@ -36,7 +36,6 @@ img {
   padding-right: 56px;
   min-height: inherit;
   width: 1920px;
-  outline: 1px solid teal;
 }
 
 .visually-hidden {
@@ -168,16 +167,32 @@ img {
 }
 
 .hero-circle-outline {
-  position: absolute;
+  position: relative;
   width: 801px;
   height: 801px;
   border-radius: 50%;
   background-color: #fafafa;
   border: 1px solid #fee382;
-  top: 50%;
+  top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.hero-circle-outline::before {
+  position: relative;
+  -webkit-transform: translate(850px, 240px);
+          transform: translate(850px, 240px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  content: "";
+  width: 86px;
+  height: 82px;
+  background-size: 140px;
+  background-image: url("../../images/tomato2.png");
+  -webkit-box-shadow: 24px 40px 32px 0px #0000001f;
+          box-shadow: 24px 40px 32px 0px #0000001f;
 }
 
 .hero-circle-background {
@@ -196,6 +211,40 @@ img {
   height: 1083px;
   border-radius: 50%;
   border: 1px solid #fee382;
+}
+
+.hero-circle-white::before {
+  position: relative;
+  -webkit-transform: translate(800px, 225px);
+          transform: translate(800px, 225px);
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  content: "480 kkal";
+  width: 94px;
+  height: 94px;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffdd63;
+}
+
+.hero-circle-white::after {
+  display: inline-block;
+  -webkit-transform: translate(825px, -210px);
+          transform: translate(825px, -210px);
+  content: "";
+  width: 86px;
+  height: 82px;
+  background-image: url("../../images/tomato.png");
+  -webkit-box-shadow: 24px 40px 32px 0px #0000001f;
+          box-shadow: 24px 40px 32px 0px #0000001f;
+  background-size: 140px;
 }
 
 .hero-image {
