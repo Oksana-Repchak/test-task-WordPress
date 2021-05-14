@@ -1,0 +1,30 @@
+%logo {
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+%list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+%link-decoration {
+  display: block;
+  margin-top: 0;
+  text-decoration: none;
+}
+
+// __________mixin_____________
+@mixin generateIcons($iconList) {
+  @each $iconName in $iconList {
+    .icon-#{$iconName} {
+      background-image: url("../../images/");
+    }
+  }
+}
+
+// @include generateIcons($icons);

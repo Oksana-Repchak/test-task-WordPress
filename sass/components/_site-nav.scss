@@ -1,0 +1,48 @@
+.main-nav {
+  position: relative;
+  top: 32px;
+
+  align-items: center;
+  min-height: inherit;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.site-nav {
+  @extend %list;
+
+  margin-right: 108px;
+
+  display: flex;
+
+  .item:not(:last-child) {
+    margin-right: 56px;
+  }
+  .link {
+    color: $title-text-color;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+  }
+}
+
+.button-nav {
+  display: flex;
+  @extend %list;
+
+  .item:not(:last-child) {
+    margin-right: 39px;
+  }
+}
+
+.button-nav-icon {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  background-color: inherit;
+  color: $title-text-color;
+}
