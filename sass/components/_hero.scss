@@ -44,13 +44,14 @@
     height: 82px;
     background-size: 140px;
 
-    background-image: url("../../images/tomato2.png");
+    background-image: url("./../../images/tomato2.png");
     box-shadow: 24px 40px 32px 0px #0000001f;
+    border-radius: 50px;
   }
 }
 
 .hero-circle-background {
-  transform: translate(70px, -120px);
+  transform: translate(90px, -120px);
 
   width: 1079px;
   height: 1051px;
@@ -89,14 +90,15 @@
     content: "";
     width: 86px;
     height: 82px;
-    background-image: url("../../images/tomato.png");
+    background-image: url("./../../images/tomato.png");
     box-shadow: 24px 40px 32px 0px #0000001f;
     background-size: 140px;
+    border-radius: 50px;
   }
 }
 
 .hero-image {
-  transform: translate(15%, 15%);
+  transform: translate(15%, 0%);
 }
 
 .hero-title {
@@ -112,10 +114,8 @@
   &::after {
     display: flex;
     content: "";
-    margin-right: 20px;
     width: 116px;
     height: 3px;
-    transform: translateY(16px);
 
     background-color: $title-text-color;
   }

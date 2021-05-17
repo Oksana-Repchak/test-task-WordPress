@@ -19,12 +19,12 @@
 }
 
 // __________mixin_____________
-@mixin generateIcons($iconList) {
-  @each $iconName in $iconList {
-    .icon-#{$iconName} {
-      background-image: url("../../images/");
-    }
-  }
-}
+// @mixin generateIcons($iconList) {
+//   @each $iconName in $iconList {
+//     .icon-#{$iconName} {
+//       background-image: url("../../images/");
+//     }
+//   }
+// }
 
 // @include generateIcons($icons);
