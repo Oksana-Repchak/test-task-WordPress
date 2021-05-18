@@ -15,12 +15,13 @@
   }
 }
 
-// .logo-white {
-//   @extend %logo;
-//   display: inline-block;
-//   margin-bottom: 20px;
-//   color: $background-text-color;
-// }
+.logo-white {
+  @extend %logo;
+  display: inline-block;
+  margin: 0;
+  color: #fafafa;
+}
+
 .accent {
   color: $accent-color;
 }

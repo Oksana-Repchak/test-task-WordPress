@@ -18,6 +18,15 @@
   text-decoration: none;
 }
 
+%section-title-after::after {
+  display: flex;
+  content: "";
+  width: 64px;
+  height: 3px;
+  transform: translateY(19px);
+  background-color: $title-text-color;
+}
+
 // __________mixin_____________
 // @mixin generateIcons($iconList) {
 //   @each $iconName in $iconList {

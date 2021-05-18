@@ -1,14 +1,44 @@
-// .section {
-//   padding-top: 60px;
-//   padding-bottom: 60px;
+.section-advantage {
+  padding-top: 48px;
+  padding-bottom: 80px;
+  background-color: $accent-color;
 
-//   .section-title {
-//     margin-top: 0;
-//     margin-bottom: 30px;
+  .advantage-title {
+    @extend %section-title-after;
+    margin-top: 0;
+    margin-bottom: 103px;
 
-//     color: $title-text-color;
-//     font-size: 28px;
-//     line-height: 1.18;
-//     text-align: center;
-//   }
-// }
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    color: $title-text-color;
+    font-size: 48px;
+    text-align: center;
+
+    &::after {
+      transform: translate(790px, 19px);
+    }
+  }
+}
+
+.advantage-list {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  .item:not(:last-child) {
+    margin-right: 97px;
+  }
+
+  .advantage-subtitle {
+    font-family: Poppins, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: $title-text-color;
+  }
+
+  .advantage-description {
+    width: 240px;
+  }
+}

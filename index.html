@@ -65,8 +65,8 @@
         </nav>
       </div>
     </header>
-    <!-- Website Hero -->
     <main>
+      <!-- Website Hero -->
       <section class="hero">
         <div class="container make-flex">
           <ul class="social-list">
@@ -130,6 +130,7 @@
           </div>
         </div>
       </section>
+
       <!-- Dishes of the day -->
       <section class="section-dishes">
         <div class="container">
@@ -214,47 +215,58 @@
           </ul>
         </div>
       </section>
+
       <!-- WHY WE? -->
-      <section>
+      <section class="section-advantage">
         <div class="container">
-          <h2>Why we?</h2>
-          <ul>
-            <li>
-              <span></span>
-              <h3>Fast</h3>
-              <p>
+          <h2 class="advantage-title">Why we?</h2>
+          <ul class="advantage-list">
+            <li class="item">
+              <svg width="56" height="56" aria-label="clock">
+                <use href="./images/sprite.svg#clock"></use>
+              </svg>
+              <h3 class="advantage-subtitle">Fast</h3>
+              <p class="advantage-description">
                 Reprehenderit occaecat aute voluptate aliquip ipsum labore
                 proident ullamco.
               </p>
             </li>
-            <li>
-              <span></span>
-              <h3>Tasty</h3>
-              <p>
+            <li class="item">
+              <svg width="56" height="56" aria-label="heart">
+                <use href="./images/sprite.svg#health"></use>
+              </svg>
+              <h3 class="advantage-subtitle">Tasty</h3>
+              <p class="advantage-description">
                 Reprehenderit occaecat aute voluptate aliquip ipsum labore
                 proident ullamco.
               </p>
             </li>
-            <li>
-              <span></span>
-              <h3>Healthy</h3>
-              <p>
+            <li class="item">
+              <svg width="56" height="56" aria-label="cauliflower">
+                <use href="./images/sprite.svg#cauliflower"></use>
+              </svg>
+              <h3 class="advantage-subtitle">Healthy</h3>
+              <p class="advantage-description">
                 Reprehenderit occaecat aute voluptate aliquip ipsum labore
                 proident ullamco.
               </p>
             </li>
-            <li>
-              <span></span>
-              <h3>Cheap</h3>
-              <p>
+            <li class="item">
+              <svg width="56" height="56" aria-label="money">
+                <use href="./images/sprite.svg#business-and-finance"></use>
+              </svg>
+              <h3 class="advantage-subtitle">Cheap</h3>
+              <p class="advantage-description">
                 Reprehenderit occaecat aute voluptate aliquip ipsum labore
                 proident ullamco.
               </p>
             </li>
-            <li>
-              <span></span>
-              <h3>Comfortable</h3>
-              <p>
+            <li class="item">
+              <svg width="56" height="56" aria-label="like">
+                <use href="./images/sprite.svg#like"></use>
+              </svg>
+              <h3 class="advantage-subtitle">Comfortable</h3>
+              <p class="advantage-description">
                 Reprehenderit occaecat aute voluptate aliquip ipsum labore
                 proident ullamco.
               </p>
@@ -262,22 +274,24 @@
           </ul>
         </div>
       </section>
-      <!-- Reviews -->
 
+      <!-- Reviews -->
       <section></section>
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <a href="">GF.</a>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Menu</a></li>
-          <li><a href="">Delivery</a></li>
-        </ul>
-        <button class="button">make an order</button>
-        <p>&copy; 2020 GOOD FOOD</p>
+        <div class="footer-container">
+          <a href="" class="logo-white">GF.</a>
+          <ul class="footer-list">
+            <li class="item"><a href="" class="link">Home</a></li>
+            <li class="item"><a href="" class="link">Menu</a></li>
+            <li class="item"><a href="" class="link">Delivery</a></li>
+          </ul>
+          <button class="footer-button">make an order</button>
+        </div>
+        <p class="footer-copyright">&copy; 2020 GOOD FOOD</p>
       </div>
     </footer>
     <!--bootstrap script  -->
