@@ -735,20 +735,20 @@ img {
           justify-content: center;
 }
 
+.slider-controls {
+  -webkit-transform: translate(830px, 425px);
+          transform: translate(830px, 425px);
+}
+
 .reviews-circle-background {
   position: absolute;
   z-index: -1;
-  -webkit-transform: translate(2220px, -210px);
-          transform: translate(2220px, -210px);
+  -webkit-transform: translate(1220px, -210px);
+          transform: translate(1220px, -210px);
   width: 903px;
   height: 880px;
   background-color: #fafafa;
   border-radius: 50%;
-}
-
-.slider-controls {
-  -webkit-transform: translate(830px, 425px);
-          transform: translate(830px, 425px);
 }
 
 .rating-mini {

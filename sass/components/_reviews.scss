@@ -114,16 +114,16 @@
   justify-content: center;
 }
 
+.slider-controls {
+  transform: translate(830px, 425px);
+}
+
 .reviews-circle-background {
   position: absolute;
   z-index: -1;
-  transform: translate(2220px, -210px);
+  transform: translate(1220px, -210px);
   width: 903px;
   height: 880px;
   background-color: $background-accent-color;
   border-radius: 50%;
-}
-
-.slider-controls {
-  transform: translate(830px, 425px);
 }
