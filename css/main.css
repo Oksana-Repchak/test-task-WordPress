@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -30,7 +31,7 @@ img {
   background-color: #fee382;
 }
 
-.container {
+.container-site {
   margin-left: auto;
   margin-right: auto;
   padding-left: 56px;
@@ -93,49 +94,6 @@ img {
   min-height: 72px;
 }
 
-.logo-black {
-  color: #282630;
-  font-family: Poppins, sans-serif;
-  font-weight: 700;
-  font-size: 48px;
-  margin-right: 1310px;
-}
-
-.logo-black:hover {
-  color: #fee382;
-}
-
-.logo-white {
-  display: inline-block;
-  margin: 0;
-  color: #fafafa;
-}
-
-.accent {
-  color: #fee382;
-}
-
-.button {
-  margin: 0;
-  border: none;
-  border-radius: 25px;
-  padding: 10px 32px;
-  min-width: 85px;
-  color: #282630;
-  background-color: #ffdd63;
-  font-family: Poppins, sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  -webkit-transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button:hover, .button:focus {
-  background: #fee382;
-}
-
 .main-nav {
   position: relative;
   top: 32px;
@@ -190,6 +148,49 @@ img {
   color: #282630;
 }
 
+.logo-black {
+  color: #282630;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  margin-right: 1310px;
+}
+
+.logo-black:hover {
+  color: #fee382;
+}
+
+.logo-white {
+  display: inline-block;
+  margin: 0;
+  color: #fafafa;
+}
+
+.accent {
+  color: #fee382;
+}
+
+.button {
+  margin: 0;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 32px;
+  min-width: 85px;
+  color: #282630;
+  background-color: #ffdd63;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  -webkit-transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover, .button:focus {
+  background: #fee382;
+}
+
 .hero {
   height: 876px;
 }
@@ -240,7 +241,7 @@ img {
   width: 86px;
   height: 82px;
   background-size: 140px;
-  background-image: url("./../../images/tomato2.png");
+  background-image: url("../../../images/tomato2.png");
   -webkit-box-shadow: 24px 40px 32px 0px #0000001f;
           box-shadow: 24px 40px 32px 0px #0000001f;
   border-radius: 50px;
@@ -292,7 +293,7 @@ img {
   content: "";
   width: 86px;
   height: 82px;
-  background-image: url("./../../images/tomato.png");
+  background-image: url("../../../images/tomato.png");
   -webkit-box-shadow: 24px 40px 32px 0px #0000001f;
           box-shadow: 24px 40px 32px 0px #0000001f;
   background-size: 140px;
@@ -374,7 +375,7 @@ img {
   width: 94px;
   height: 100px;
   background-color: #f5f5f5;
-  background-image: url("./../../images/vector.svg");
+  background-image: url("../../../images/vector.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border-top-left-radius: 50%;
@@ -601,7 +602,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 780px;
   padding-top: 96px;
   padding-bottom: 96px;
   -webkit-box-align: center;
@@ -611,7 +611,6 @@ img {
 
 .section-reviews .reviews-title {
   margin-top: 0;
-  margin-bottom: 110px;
   text-transform: uppercase;
   font-family: Poppins, sans-serif;
   font-weight: 600;
@@ -621,8 +620,8 @@ img {
 }
 
 .section-reviews .reviews-title::after {
-  -webkit-transform: translate(500px, 19px);
-          transform: translate(500px, 19px);
+  -webkit-transform: translate(800px, 25px);
+          transform: translate(800px, 25px);
 }
 
 .carousel-control-prev-icon {
@@ -640,6 +639,7 @@ img {
 .reviews-image {
   width: 96px;
   height: 96px;
+  margin-bottom: 16px;
 }
 
 .image-top {
@@ -648,8 +648,8 @@ img {
 }
 
 .carousel-caption {
-  -webkit-transform: translate(100px, 150px);
-          transform: translate(100px, 150px);
+  -webkit-transform: translate(340px, 140px);
+          transform: translate(340px, 140px);
   width: 344px;
   font-family: Cabin, sans-serif;
   font-size: 16px;
@@ -659,7 +659,112 @@ img {
 }
 
 .carousel-inner {
-  overflow: visible;
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+  padding-top: 110px;
+  padding-bottom: 100px;
+}
+
+.carousel-control-prev {
+  -webkit-transform: translateX(150px);
+          transform: translateX(150px);
+}
+
+.carousel-control-next {
+  -webkit-transform: translateX(-150px);
+          transform: translateX(-150px);
+}
+
+.reviews-subtitle {
+  -webkit-transform: translateX(-120px);
+          transform: translateX(-120px);
+  margin-bottom: 16px;
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  color: #342b2b;
+}
+
+.reviews-subtitle.active {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  margin-bottom: 72px;
+}
+
+.controls-label {
+  width: 10px;
+  height: 10px;
+  padding: 5px;
+  background-color: #dedede;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-transition: all 0.9s ease;
+  transition: all 0.9s ease;
+}
+
+.controls-label:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #65636a;
+}
+
+.controls-label:not(:last-child) {
+  margin-right: 32px;
+}
+
+.controls-radio {
+  position: absolute;
+  visibility: hidden;
+}
+
+.col {
+  -webkit-box-flex: 0.2;
+      -ms-flex: 0.2 0 0%;
+          flex: 0.2 0 0%;
+}
+
+.row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reviews-circle-background {
+  position: absolute;
+  z-index: -1;
+  -webkit-transform: translate(2220px, -210px);
+          transform: translate(2220px, -210px);
+  width: 903px;
+  height: 880px;
+  background-color: #fafafa;
+  border-radius: 50%;
+}
+
+.slider-controls {
+  -webkit-transform: translate(830px, 425px);
+          transform: translate(830px, 425px);
+}
+
+.rating-mini {
+  display: inline-block;
+  font-size: 0;
+}
+
+.rating-mini span {
+  padding: 0;
+  font-size: 20px;
+  line-height: 1;
+  color: lightgrey;
+}
+
+.rating-mini > span:before {
+  content: "★";
+}
+
+.rating-mini > span.active {
+  color: gold;
 }
 
 .footer {

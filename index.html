@@ -28,7 +28,7 @@
   <body>
     <!-- Website navigation -->
     <header class="heder">
-      <div class="container">
+      <div class="container-site">
         <nav class="main-nav">
           <a href="" class="logo-black">GF.</a>
           <ul class="site-nav">
@@ -68,7 +68,7 @@
     <main>
       <!-- Website Hero -->
       <section class="hero">
-        <div class="container make-flex">
+        <div class="container-site make-flex">
           <ul class="social-list">
             <li class="item">
               <a href=""
@@ -133,7 +133,7 @@
 
       <!-- Dishes of the day -->
       <section class="section-dishes">
-        <div class="container">
+        <div class="container-site">
           <div class="dishes-background">
             <h2 class="dishes-title">Dishes of the day</h2>
           </div>
@@ -218,7 +218,7 @@
 
       <!-- WHY WE? -->
       <section class="section-advantage">
-        <div class="container">
+        <div class="container-site">
           <h2 class="advantage-title">Why we?</h2>
           <ul class="advantage-list">
             <li class="item">
@@ -277,35 +277,55 @@
 
       <!-- Reviews -->
       <section class="section-reviews">
-        <div class="container">
+        <div class="container-site">
           <h2 class="reviews-title">Reviews</h2>
           <div
             id="carouselExampleCaptions"
             class="carousel slide"
             data-bs-ride="carousel"
           >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
+            <!-- switchs -->
+            <form class="slider-controls">
+              <div class="navigation">
+                <label
+                  class="controls-label"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                  ><input
+                    class="controls-radio"
+                    type="radio"
+                    name="r"
+                    id="switch1"
+                /></label>
+                <label
+                  class="controls-label"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                  ><input
+                    class="controls-radio"
+                    type="radio"
+                    name="r"
+                    id="switch2"
+                /></label>
+                <label
+                  class="controls-label"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                  ><input
+                    checked
+                    class="controls-radio"
+                    type="radio"
+                    name="r"
+                    id="switch3"
+                /></label>
+              </div>
+            </form>
+            <!-- slides -->
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="row">
@@ -318,6 +338,15 @@
                       width="96"
                       height="96"
                     />
+                    <h5 class="reviews-subtitle">Rosemary Edwards</h5>
+                    <!-- star rating -->
+                    <div class="rating-mini">
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span></span>
+                    </div>
                   </div>
                   <div class="col">
                     <img
@@ -328,6 +357,14 @@
                       width="96"
                       height="96"
                     />
+                    <!-- star rating -->
+                    <div class="rating-mini">
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                    </div>
                   </div>
                   <div class="col">
                     <img
@@ -338,11 +375,19 @@
                       width="96"
                       height="96"
                     />
+                    <h5 class="reviews-subtitle">Rosemary Edwards</h5>
+                    <!-- star rating -->
+                    <div class="rating-mini">
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                    </div>
                   </div>
                 </div>
-
                 <div class="carousel-caption d-none d-md-block">
-                  <h5 class="reviews-subtitle">Rosemary Edwards</h5>
+                  <h5 class="reviews-subtitle active">Rosemary Edwards</h5>
                   <p>
                     Lorem nulla enim in dolore reprehenderit amet in. Ex aliqua
                     eu aliqua elit. Proident enim occaecat cillum elit cupidatat
@@ -361,6 +406,15 @@
                       width="96"
                       height="96"
                     />
+                    <h5 class="reviews-subtitle">Rosemary Edwards</h5>
+                    <!-- star rating -->
+                    <div class="rating-mini">
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                    </div>
                   </div>
                   <div class="col">
                     <img
@@ -371,6 +425,14 @@
                       width="96"
                       height="96"
                     />
+                    <!-- star rating -->
+                    <div class="rating-mini">
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                    </div>
                   </div>
                   <div class="col">
                     <img
@@ -381,11 +443,20 @@
                       width="96"
                       height="96"
                     />
+                    <h5 class="reviews-subtitle">Rosemary Edwards</h5>
+                    <!-- star rating -->
+                    <div class="rating-mini">
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span></span>
+                    </div>
                   </div>
                 </div>
 
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Rosemary Edwards</h5>
+                  <h5 class="reviews-subtitle active">Rosemary Edwards</h5>
                   <p>
                     Lorem nulla enim in dolore reprehenderit amet in. Ex aliqua
                     eu aliqua elit. Proident enim occaecat cillum elit cupidatat
@@ -404,6 +475,15 @@
                       width="96"
                       height="96"
                     />
+                    <h5 class="reviews-subtitle">Rosemary Edwards</h5>
+                    <!-- star rating -->
+                    <div class="rating-mini">
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                    </div>
                   </div>
                   <div class="col">
                     <img
@@ -414,6 +494,14 @@
                       width="96"
                       height="96"
                     />
+                    <!-- star rating -->
+                    <div class="rating-mini">
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span></span>
+                    </div>
                   </div>
                   <div class="col">
                     <img
@@ -424,11 +512,19 @@
                       width="96"
                       height="96"
                     />
+                    <h5 class="reviews-subtitle">Rosemary Edwards</h5>
+                    <!-- star rating -->
+                    <div class="rating-mini">
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                    </div>
                   </div>
                 </div>
-
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Rosemary Edwards</h5>
+                  <h5 class="reviews-subtitle active">Rosemary Edwards</h5>
                   <p>
                     Lorem nulla enim in dolore reprehenderit amet in. Ex aliqua
                     eu aliqua elit. Proident enim occaecat cillum elit cupidatat
@@ -463,12 +559,13 @@
             </button>
           </div>
         </div>
+        <div class="reviews-circle-background"></div>
       </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container">
+      <div class="container-site">
         <div class="footer-container">
           <a href="" class="logo-white">GF.</a>
           <ul class="footer-list">

@@ -1,6 +1,5 @@
 .section-reviews {
   display: flex;
-  height: 780px;
   padding-top: 96px;
   padding-bottom: 96px;
   align-items: center;
@@ -8,7 +7,6 @@
   .reviews-title {
     @extend %section-title-after;
     margin-top: 0;
-    margin-bottom: 110px;
 
     text-transform: uppercase;
     font-family: Poppins, sans-serif;
@@ -18,7 +16,7 @@
     text-align: center;
 
     &::after {
-      transform: translate(500px, 19px);
+      transform: translate(800px, 25px);
     }
   }
 }
@@ -38,6 +36,7 @@
 .reviews-image {
   width: 96px;
   height: 96px;
+  margin-bottom: 16px;
 }
 
 .image-top {
@@ -45,7 +44,7 @@
 }
 
 .carousel-caption {
-  transform: translate(100px, 150px);
+  transform: translate(340px, 140px);
   width: 344px;
   font-family: Cabin, sans-serif;
   font-size: 16px;
@@ -55,8 +54,76 @@
 }
 
 .carousel-inner {
-  overflow: visible;
+  transform: translateX(100px);
+  padding-top: 110px;
+  padding-bottom: 100px;
+}
+
+.carousel-control-prev {
+  transform: translateX(150px);
+}
+
+.carousel-control-next {
+  transform: translateX(-150px);
 }
 
 .reviews-subtitle {
+  transform: translateX(-120px);
+  margin-bottom: 16px;
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  color: #342b2b;
+
+  &.active {
+    transform: translateX(0px);
+    margin-bottom: 72px;
+  }
+}
+
+.controls-label {
+  width: 10px;
+  height: 10px;
+  padding: 5px;
+  background-color: #dedede;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.9s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: #65636a;
+  }
+
+  &:not(:last-child) {
+    margin-right: 32px;
+  }
+}
+
+.controls-radio {
+  position: absolute;
+  visibility: hidden;
+}
+
+.col {
+  flex: 0.2 0 0%;
+}
+.row {
+  justify-content: center;
+}
+
+.reviews-circle-background {
+  position: absolute;
+  z-index: -1;
+  transform: translate(2220px, -210px);
+  width: 903px;
+  height: 880px;
+  background-color: $background-accent-color;
+  border-radius: 50%;
+}
+
+.slider-controls {
+  transform: translate(830px, 425px);
 }
