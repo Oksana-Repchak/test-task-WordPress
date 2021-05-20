@@ -241,7 +241,7 @@ img {
   width: 86px;
   height: 82px;
   background-size: 140px;
-  background-image: url("../../../images/tomato2.png");
+  background-image: url(".../../../images/tomato2.png");
   -webkit-box-shadow: 24px 40px 32px 0px #0000001f;
           box-shadow: 24px 40px 32px 0px #0000001f;
   border-radius: 50px;
@@ -293,7 +293,7 @@ img {
   content: "";
   width: 86px;
   height: 82px;
-  background-image: url("../../../images/tomato.png");
+  background-image: url(".../../../images/tomato.png");
   -webkit-box-shadow: 24px 40px 32px 0px #0000001f;
           box-shadow: 24px 40px 32px 0px #0000001f;
   background-size: 140px;
@@ -379,7 +379,7 @@ img {
   width: 94px;
   height: 100px;
   background-color: #f5f5f5;
-  background-image: url("../../../images/vector.svg");
+  background-image: url(".../../../images/vector.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border-top-left-radius: 50%;
@@ -631,13 +631,13 @@ img {
 .carousel-control-prev-icon {
   width: 54px;
   height: 54px;
-  background-image: url("./../../images/arrow_left.svg");
+  background-image: url(".../../../images/arrow_left.svg");
 }
 
 .carousel-control-next-icon {
   width: 54px;
   height: 54px;
-  background-image: url("./../../images/arrow_right.svg");
+  background-image: url(".../../../images/arrow_right.svg");
 }
 
 .reviews-image {
