@@ -140,6 +140,13 @@
   .item:not(:last-child) {
     margin-right: 24px;
   }
+
+  .button-site {
+    &:hover,
+    &:focus {
+      background: $accent-color;
+    }
+  }
 }
 
 .hero-container {
