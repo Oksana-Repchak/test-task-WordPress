@@ -141,8 +141,9 @@ img {
   display: flex;
 }
 
-.button-nav .item:not(:last-child) {
-  margin-right: 39px;
+.button-nav .item:last-child {
+  -webkit-transform: translateX(59px);
+          transform: translateX(59px);
 }
 
 .button-nav-icon {

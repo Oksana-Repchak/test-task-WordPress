@@ -45,8 +45,8 @@
   display: flex;
   @extend %list;
 
-  .item:not(:last-child) {
-    margin-right: 39px;
+  .item:last-child {
+    transform: translateX(59px);
   }
 }
 
