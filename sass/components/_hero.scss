@@ -133,7 +133,7 @@
   width: 474px;
 }
 
-.hero-button {
+.hero-button-list {
   @extend %list;
   display: flex;
 
@@ -141,7 +141,25 @@
     margin-right: 24px;
   }
 
-  .button-site {
+  .hero-button {
+    margin: 0;
+    border: none;
+    border-radius: 25px;
+    padding: 11px 21px;
+    min-width: 85px;
+
+    color: $title-text-color;
+    background-color: $button-color;
+
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    cursor: pointer;
+    transition: color 250ms $timing-function;
+
     &:hover,
     &:focus {
       background: $accent-color;

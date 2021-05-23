@@ -18,7 +18,7 @@
 .site-nav {
   @extend %list;
 
-  margin-right: 108px;
+  margin-right: 208px;
 
   display: flex;
 
@@ -32,6 +32,12 @@
     font-weight: 400;
     font-size: 14px;
     text-decoration: none;
+
+    transition: color 250ms $timing-function;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
 }
 
@@ -51,4 +57,67 @@
   padding: 0;
   background-color: inherit;
   color: $title-text-color;
+
+  transition: color 250ms $timing-function;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+
+// Search input
+
+.search-box {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  height: 40px;
+  border-radius: 40px;
+}
+
+.search-box:hover > .search-txt {
+  width: 200px;
+  padding: 0 6px;
+  transform: translateX(40px);
+}
+
+.search-box:hover > .search-btn {
+  background-color: $accent-color;
+  color: $background-accent-color;
+}
+
+.search-btn {
+  position: absolute;
+
+  margin: 0;
+  border: none;
+  color: $title-text-color;
+
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  color: $accent-color;
+  cursor: pointer;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: $title-text-color;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+  font-family: Cabin, sans-serif;
+  font-size: 16px;
 }
