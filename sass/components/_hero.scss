@@ -16,8 +16,15 @@
   .item:not(:last-child) {
     margin-bottom: 40px;
   }
+
   .social-icon {
+    transition: color 250ms $timing-function;
     fill: $title-text-color;
+    
+    &:hover,
+    :focus {
+      fill: $accent-color;
+    }
   }
 }
 

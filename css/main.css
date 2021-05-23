@@ -111,7 +111,7 @@ img {
 }
 
 .site-nav {
-  margin-right: 208px;
+  margin-right: 109px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,6 +172,7 @@ img {
 }
 
 .search-box:hover > .search-txt {
+  opacity: 1;
   width: 200px;
   padding: 0 6px;
   -webkit-transform: translateX(40px);
@@ -209,6 +210,7 @@ img {
 }
 
 .search-txt {
+  opacity: 0;
   border: none;
   background: none;
   outline: none;
@@ -292,7 +294,14 @@ img {
 }
 
 .social-list .social-icon {
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #282630;
+}
+
+.social-list .social-icon:hover,
+.social-list .social-icon :focus {
+  fill: #fee382;
 }
 
 .hero-circle-outline {
